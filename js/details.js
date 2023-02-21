@@ -1,4 +1,3 @@
-
 const urlParams = new URLSearchParams(window.location.search);
 const pokemonUrl = urlParams.get("url");
 
@@ -28,6 +27,3 @@ const pokemonUrl = urlParams.get("url");
   }
 
   fetchPokemonDetails();
-
-
-

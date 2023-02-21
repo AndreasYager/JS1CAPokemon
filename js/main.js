@@ -35,7 +35,8 @@ async function fetchPokemon() {
 try {
   fetchPokemon();
 } catch (error) {
-  console.log(error)
-  innerHTML = "Error"
+  console.error(error);
+  const errorElement = document.createElement("div");
+  errorElement.innerHTML = "An error occurred while fetching the Pokémon. Please try again later.";
+  pokemonList.appendChild(errorElement);
 }
-
