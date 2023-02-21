@@ -32,4 +32,10 @@ async function fetchPokemon() {
   }
 }
 
-fetchPokemon();
+try {
+  fetchPokemon();
+} catch (error) {
+  console.log(error)
+  innerHTML = "Error"
+}
+
