@@ -1,4 +1,4 @@
-
+/*Contact form*/
 
 .form-error {
     display: none;
@@ -11,3 +11,54 @@ a {
     text-decoration: none;
     color: maroon;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: large;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  button {
+    display: block;
+    width: 80%;
+    align-items: center;
+    padding: 10px;
+    background-color: grey;
+    margin-left: 50%;
+    margin-top: 20px;
+  }
+
+  #successMessage {
+    display: none;
+    margin-right: 5%;
+  }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+body { 
+    margin: 0%;        
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+header {
+    display: flex;
+    margin-left: 0%;       
+    font-size: x-large;
+    width: 40%;
+    justify-content: space-evenly;
+    margin-top: 10px;
+} 

@@ -34,7 +34,16 @@ function validateForm(event) {
         addressError.style.display = "none";
     } else {
         addressError.style.display = "block";
+    } if (
+        checkLength(firstName.value, 0) &&
+        checkLength(subject.value, 10) &&
+        validateEmail(email.value) &&
+        checkLength(address.value, 25)
+    ) {
+        document.querySelector("#successMessage").style.display = "block";
+        form.reset();
     }
+    
 
 }
 
