@@ -44,6 +44,6 @@ try {
 } catch (error) {
   console.error(error);
   const errorElement = document.createElement("div");
-  errorElement.innerHTML = "An error occurred while fetching the Pokémon. Please try again later.";
+  errorElement.innerHTML = "An error occurred while fetching the Pokemon. Please try again.";
   pokemonList.appendChild(errorElement);
 }
